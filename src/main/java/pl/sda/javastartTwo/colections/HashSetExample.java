@@ -1,6 +1,6 @@
 package pl.sda.javastartTwo.colections;
 
-import pl.sda.javastartTwo.Person;
+import pl.sda.javastartTwo.PersonOne;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -16,13 +16,13 @@ public class HashSetExample {
 
     private static void addingPersonToSet() {
 
-        Person tomek = new Person(123, "Tomek");
-        Person ania = new Person(4534, "Ania");
-        Person ola = new Person(123, "Ola");
-        Person magda1 = new Person(45, "Magda");
-        Person magda2 = new Person(45, "Magda");
+        PersonOne tomek = new PersonOne(123, "Tomek");
+        PersonOne ania = new PersonOne(4534, "Ania");
+        PersonOne ola = new PersonOne(123, "Ola");
+        PersonOne magda1 = new PersonOne(45, "Magda");
+        PersonOne magda2 = new PersonOne(45, "Magda");
 
-        Set<Person> people = new HashSet<>();
+        Set<PersonOne> people = new HashSet<>();
         people.add(tomek);
         people.add(ania);
         people.add(ola);

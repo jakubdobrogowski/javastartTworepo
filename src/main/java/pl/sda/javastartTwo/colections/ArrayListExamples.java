@@ -1,6 +1,6 @@
 package pl.sda.javastartTwo.colections;
 
-import pl.sda.javastartTwo.Person;
+import pl.sda.javastartTwo.PersonOne;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -44,11 +44,11 @@ public class ArrayListExamples {
 
     private static void personList() {
 
-        ArrayList<Person> people = new ArrayList<>();
-        people.add(new Person(123, "Ania"));
-        people.add(new Person(122, "Tomek"));
-        people.add(new Person(121, "Ola"));
-        people.add(new Person(120, "Adam"));
+        ArrayList<PersonOne> people = new ArrayList<>();
+        people.add(new PersonOne(123, "Ania"));
+        people.add(new PersonOne(122, "Tomek"));
+        people.add(new PersonOne(121, "Ola"));
+        people.add(new PersonOne(120, "Adam"));
 
         Collections.sort(people);
         System.out.println(people);
@@ -80,7 +80,8 @@ public class ArrayListExamples {
         list.add(3L);
 
         list.sort(Comparator.naturalOrder());
-        //  list.sort(Comparator.reverse());
+        //list.sort(Comparator.reverse());
+
         Collections.sort(list);
         System.out.println(list);
 
@@ -143,7 +144,8 @@ public class ArrayListExamples {
             System.out.println(value);
         }
 
-        firstList.stream().forEach(e -> System.out.println(e));
+        firstList.stream()
+                .forEach(e -> System.out.println(e));
 
 
         for (String value : firstList) {

@@ -1,12 +1,12 @@
 package pl.sda.javastartTwo.colections;
 
-import pl.sda.javastartTwo.Person;
+import pl.sda.javastartTwo.PersonOne;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class HashMapExample {
+public class  HashMapExample {
 
     public static void main(String[] args) {
 
@@ -16,12 +16,12 @@ public class HashMapExample {
 
     private static void basicMapOperations() {
 
-        Person ania = new Person(123, "Ania");
-        Person ola = new Person(234, "Ola");
-        Person tomek1 = new Person(345, "Tomek");
-        Person tomek2 = new Person(456, "Tomek");
+        PersonOne ania = new PersonOne(123, "Ania");
+        PersonOne ola = new PersonOne(234, "Ola");
+        PersonOne tomek1 = new PersonOne(345, "Tomek");
+        PersonOne tomek2 = new PersonOne(456, "Tomek");
 
-        HashMap<Integer, Person> peopleByPesel = new HashMap<>();
+        HashMap<Integer, PersonOne> peopleByPesel = new HashMap<>();
 
         peopleByPesel.put(ania.getPesel(), ania);
         peopleByPesel.put(ola.getPesel(), ola);
@@ -30,7 +30,7 @@ public class HashMapExample {
 
         System.out.println(peopleByPesel);
 
-        HashMap<String, Person> peopleByName = new HashMap<>();
+        HashMap<String, PersonOne> peopleByName = new HashMap<>();
 
         peopleByName.put(ania.getName(), ania);
         peopleByName.put(ola.getName(), ola);
@@ -45,14 +45,14 @@ public class HashMapExample {
 
     }
 
-    private static void properWayOfAddingPeople(Person ania, Person ola, Person tomek1, Person tomek2) {
-        HashMap<String, List<Person>> map = new HashMap<>();
+    private static void properWayOfAddingPeople(PersonOne ania, PersonOne ola, PersonOne tomek1, PersonOne tomek2) {
+        HashMap<String, List<PersonOne>> map = new HashMap<>();
         if (map.containsKey(ania.getName())) {
 
-            List<Person> people = map.get(ania.getName()); //bardzo ważne pod kluczem ania jest lista "ludzi" wyciagamy liste
+            List<PersonOne> people = map.get(ania.getName()); //bardzo ważne pod kluczem ania jest lista "ludzi" wyciagamy liste
             people.add(ania);
         }else{
-            List<Person> people = new ArrayList<>();
+            List<PersonOne> people = new ArrayList<>();
             people.add(ania);
             map.put(ania.getName(), people );
         }

@@ -1,6 +1,6 @@
 package pl.sda.javastartTwo.generic2;
 
-import pl.sda.javastartTwo.Person;
+import pl.sda.javastartTwo.PersonOne;
 import pl.sda.javastartTwo.generic1.Apple;
 import pl.sda.javastartTwo.generic1.Orange;
 
@@ -17,14 +17,13 @@ public class Generics2Main {
 
     private static void utilsExamples() {
         Long[] longsArray = {1L, 2L};
-
         List list = GenericsUtils.fromArrayToList(longsArray); //podczas konwersji tracimy typ
 
         Object o = list.get(0); // nienajlepiej
 
         List<Long> longs = GenericsUtils.fromArrayToListWithGenerics(longsArray);
 
-        Person[] people = new Person[]{new Person(123, "Ania")};
+        PersonOne[] people = new PersonOne[]{new PersonOne(123, "Ania")};
         List<Integer> integers = GenericsUtils.formArrayToList(people, e -> e.getPesel());
     }
 
@@ -34,7 +33,7 @@ public class Generics2Main {
                 new GenericFruitBoxWithExtends<>(new Orange());
 
         // GenericFruitBoxWithExtends<T> tGenericFruitBoxWithExtends =      tak nie przejdzie
-        //     new GenericFruitBoxWithExtends<>(new Person(123,"Ania"));
+        //     new GenericFruitBoxWithExtends<>(new PersonOne(123,"Ania"));
     }
 
     private static void firstGenericExample() {
@@ -49,7 +48,7 @@ public class Generics2Main {
         Apple value1 = appleGenericsFruitBox.getValue();
         value1.introduceYourSelfe();
 
-        GenericsFruitBox<Person> personGenericsFruitBox = new GenericsFruitBox<>(new Person(123, "Ania"));
+        GenericsFruitBox<PersonOne> personGenericsFruitBox = new GenericsFruitBox<>(new PersonOne(123, "Ania"));
 
         //  personGenericFruitBox.getValue().introduceYourself();
     }

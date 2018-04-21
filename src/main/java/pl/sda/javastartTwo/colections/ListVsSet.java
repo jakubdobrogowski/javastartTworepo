@@ -16,9 +16,9 @@ public class ListVsSet {
 
     private static void removeAllCompare() {
 
-        // setRemoveList();
+         setRemoveList();
         // listRemoveset();
-        checkIfColectContains();
+        //checkIfColectContains();
     }
 
     private static void checkIfColectContains() {

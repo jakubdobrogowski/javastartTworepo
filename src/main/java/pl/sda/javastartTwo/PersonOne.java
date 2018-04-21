@@ -2,12 +2,12 @@ package pl.sda.javastartTwo;
 
 import java.util.Objects;
 
-public class Person implements Comparable<Person> {
+public class PersonOne implements Comparable <PersonOne> {
 
     private Integer pesel;
     private String name;
 
-    public Person(Integer pesel, String name) {
+    public PersonOne(Integer pesel, String name) {
         this.pesel = pesel;
         this.name = name;
     }
@@ -19,7 +19,7 @@ public class Person implements Comparable<Person> {
 
 
     @Override
-    public int compareTo(Person o) {
+    public int compareTo(PersonOne o) {
         return pesel.compareTo(o.getPesel());
     }
 
@@ -29,7 +29,7 @@ public class Person implements Comparable<Person> {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "PersonOne{" +
                 "pesel=" + pesel +
                 ", name='" + name + '\'' +
                 '}';
@@ -39,7 +39,7 @@ public class Person implements Comparable<Person> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
+        PersonOne person = (PersonOne) o;
         return Objects.equals(pesel, person.pesel);
     }
 

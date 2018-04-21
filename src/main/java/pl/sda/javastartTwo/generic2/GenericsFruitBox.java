@@ -8,7 +8,6 @@ public class GenericsFruitBox<T> {
         this.value = value;
     }
 
-
     public T getValue() {
         return value;
     }
