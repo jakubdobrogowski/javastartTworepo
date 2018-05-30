@@ -1,17 +1,15 @@
-package pl.sda.javastartTwo.HomeWork2;
+package pl.sda.javastartTwo.homeWork2;
 
 import com.google.common.collect.Lists;
-import pl.sda.javastartTwo.PersonOne;
 
-import java.lang.reflect.Array;
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class MapPersonSalary {
 
-    public static HashMap<Double, List<Person>> salaryMap(Person[] array) {
+    public static Map<Double, List<Person>> salaryMap(Person[] array) {
 
-        HashMap<Double, List<Person>> doublePersonHashMap = new HashMap<>();
+        Map<Double, List<Person>> doublePersonHashMap = new HashMap<>();
 
         for (Person element : array) {
 

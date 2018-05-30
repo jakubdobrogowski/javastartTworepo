@@ -1,4 +1,4 @@
-package pl.sda.javastartTwo.HomeWork2;
+package pl.sda.javastartTwo.homeWork2;
 
 import java.util.HashMap;
 

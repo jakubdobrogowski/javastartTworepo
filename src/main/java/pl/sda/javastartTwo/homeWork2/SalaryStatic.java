@@ -1,4 +1,4 @@
-package pl.sda.javastartTwo.HomeWork2;
+package pl.sda.javastartTwo.homeWork2;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -14,14 +14,14 @@ public class PersonSalary {
 
         for (Person person : array) {
 
-            if (objectObjectHashMap.containsKey((double) person.getSalary())) {
+            if (objectObjectHashMap.containsKey(person.getSalary())) {
 
-                Integer counter = objectObjectHashMap.get((double) person.getSalary()); //pobiera wartosc dla klucza
-                objectObjectHashMap.put((double) person.getSalary(), counter + 1);
+                Integer counter = objectObjectHashMap.get( person.getSalary()); //pobiera wartosc dla klucza
+                objectObjectHashMap.put( person.getSalary(), counter + 1);
 
             } else {
 
-                objectObjectHashMap.put((double) person.getSalary(), 1);
+                objectObjectHashMap.put( person.getSalary(), 1);
             }
         }
         return objectObjectHashMap;
