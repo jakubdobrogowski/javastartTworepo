@@ -1,4 +1,4 @@
-package pl.sda.javastart.JavaPodstawy;
+package pl.sda.javastartTwo.files;
 
 
 import java.io.FileNotFoundException;
@@ -14,7 +14,6 @@ public class SaveAndRead {
     public static void main(String[] args) throws IOException {
 
         reading();
-
         savefile();
     }
 

@@ -1,4 +1,4 @@
-package pl.sda.javastartTwo.HomeWork.kolekcje;
+package pl.sda.javastartTwo.homeWork.kolekcje;
 
 //Napisz metodÍ przetwarzajĻcĻ podanĻ tablicÍ animals na set z zachowaniem kolejnoúci elementůw
 // z oryginalnej tablicy + naleŅy zapewniś poprawne wyelimowanie duplikatůw (" dog" "dog")

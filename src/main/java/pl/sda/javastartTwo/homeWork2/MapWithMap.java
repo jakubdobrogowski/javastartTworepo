@@ -1,33 +1,20 @@
 package pl.sda.javastartTwo.homeWork2;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class MapMapTwo {
+public class MapWithMap {
 
 
     public static void main(String[] args) {
 
-        Customer[] people = new Customer[]{
-                new Customer("Anna", "Nowak", 33, "1200"),
-                new Customer("Beata", "Kowalska", 22, "1200"),
-                new Customer("Marek", " Nowak", 25, "1250"),
-                new Customer("Adam", "Twardowski", 33, "1100"),
-                new Customer("Monika  ", "Kos", 25, "2500"),
-                new Customer("Adam", "Rudy", 45, "3333"),
-                new Customer("Marek", "Rudy", 15, 2210),
-                new Customer("Adam", " Madej", 15, 3333)
-        };
-
-
-        Map<String, Map<Double, Integer>> nameSalaryStats = MapMapTwo.nameSalaryStats();
+        Map<String, Map<Double, Integer>> nameSalaryStats = MapWithMap.nameSalaryStats();
 
         iterateOverMap(nameSalaryStats);
     }
 
-    private static void iterateOverMap(Map<String, Map<Double, Integer>> nameSalaryStats) {
+    private static void iterateOverMap(Map<String, Map<Double, Integer>> nameSalaryStats) { //iterowanie po mapie
 
         for (String name : nameSalaryStats.keySet()) {
 
@@ -40,14 +27,14 @@ public class MapMapTwo {
         }
         System.out.println("--------------------------------------");
         for (Map.Entry<String, Map<Double, Integer>> mapEntry : nameSalaryStats.entrySet()) {
-
+//Map.Entry - Entry to interfejs wewnętrzny
             System.out.println(mapEntry);
         }
     }
 
     public static Map<String, Map<Double, Integer>> nameSalaryStats() {
 
-        List<Customer> customers = giveMeCustomers();
+        List<Customer> customers = MainCustomer.giveMeCustomersList();
 
         customers.stream().forEach(e -> e.setName(e.getName().trim()));
 
@@ -63,7 +50,7 @@ public class MapMapTwo {
 
                     Integer counter = secondMap.get(customer.getSalary()); // znowu wyciagamy
                     secondMap.replace(customer.getSalary(), counter + 1);
-                }else {
+                } else {
 
                     secondMap.put(customer.getSalary(), 1);
                 }
@@ -81,18 +68,5 @@ public class MapMapTwo {
         return resultPersonMapMap;
     }
 
-    public static List<Customer> giveMeCustomers() {
-        Customer[] people = new Customer[]{
 
-                new Customer("Anna", "Nowak", 33, "1200"),
-                new Customer("Beata", "Kowalska", 22, "1200"),
-                new Customer("Marek", " Nowak", 25, "1250"),
-                new Customer("Adam", "Twardowski", 33, "1100"),
-                new Customer("Monika  ", "Kos", 25, "2500"),
-                new Customer("Adam", "Rudy", 45, "3333"),
-                new Customer("Marek", "Rudy", 15, 2210),
-                new Customer("Adam", "Madej", 15, 3333)
-        };
-        return Arrays.asList(people);
-    }
 }

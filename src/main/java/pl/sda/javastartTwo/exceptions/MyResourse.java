@@ -1,6 +1,6 @@
 package pl.sda.javastartTwo.exceptions;
 
-public class MyResourse implements AutoCloseable { //wazne
+public class MyResourse implements AutoCloseable { //wałasny menadżer kontekstu
 
     public void doSomeWork(String work){
 

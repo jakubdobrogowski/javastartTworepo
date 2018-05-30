@@ -2,13 +2,13 @@ package pl.sda.javastartTwo.homeWork2;
 
 import java.util.HashMap;
 
-public class MapPerson {
+public class MapNameCustomer {
 
-    public static HashMap<Integer, Person> mapId(Person[] array){
+    public static HashMap<Integer, Customer> mapId(Customer[] array){
 
-        HashMap<Integer, Person> peopleById = new HashMap<>();
+        HashMap<Integer, Customer> peopleById = new HashMap<>();
 
-        for (Person person :array) {
+        for (Customer person :array) {
 
             peopleById.put(person.getId(), person);
         }

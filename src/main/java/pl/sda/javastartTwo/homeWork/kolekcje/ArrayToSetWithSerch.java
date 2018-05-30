@@ -1,4 +1,4 @@
-package pl.sda.javastartTwo.HomeWork.kolekcje;
+package pl.sda.javastartTwo.homeWork.kolekcje;
 
 // Napisz metodÍ ktůra przyjmie tablicÍ i element po ktůrym bÍdziemy szukaś (String) i wewnĻtrz
 // wykorzysta metodÍ //1 a nastÍpnie jako wynik zwrůci ile jest elementůw růwnych szukanemu elementowi
@@ -6,7 +6,6 @@ package pl.sda.javastartTwo.HomeWork.kolekcje;
 // Napisz metodÍ przetwarzajĻcĻ podanĻ tablicÍ animals na listÍ elementůw pozbawionych bia≥ych znakůw
 // (spacje, tabulatory) //1
 
-import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;

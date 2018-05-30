@@ -5,14 +5,15 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class PersonSalary {
+public class SalaryStatic {
 
 
-    public static Map<Double, Integer> statistic(Person[] array) {
+    public static Map<Double, Integer> slaryStats() {
+
 
         Map<Double, Integer> objectObjectHashMap = new HashMap<>();
-
-        for (Person person : array) {
+        Customer[] array = MainCustomer.giveMeCustomers();
+        for (Customer person : array) {
 
             if (objectObjectHashMap.containsKey(person.getSalary())) {
 
@@ -27,7 +28,7 @@ public class PersonSalary {
         return objectObjectHashMap;
     }
 
-    public static Map<Double, Long> statistic1(Person[] array) {
+    public static Map<Double, Long> statisticWithStream(Customer[] array) {
 
         return Arrays.stream(array)
                 .collect(Collectors.groupingBy(

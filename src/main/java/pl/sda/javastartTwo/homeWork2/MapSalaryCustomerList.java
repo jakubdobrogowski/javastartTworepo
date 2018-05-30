@@ -5,17 +5,17 @@ import com.google.common.collect.Lists;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class MapPersonSalary {
+public class MapSalaryCustomerList {
 
-    public static Map<Double, List<Person>> salaryMap(Person[] array) {
+    public static Map<Double, List<Customer>> salaryMap(Customer[] array) {
 
-        Map<Double, List<Person>> doublePersonHashMap = new HashMap<>();
+        Map<Double, List<Customer>> doublePersonHashMap = new HashMap<>();
 
-        for (Person element : array) {
+        for (Customer element : array) {
 
             if (doublePersonHashMap.containsKey(element.getSalary())) {
 
-                List<Person> peopleInMap = doublePersonHashMap.get(element.getSalary());
+                List<Customer> peopleInMap = doublePersonHashMap.get(element.getSalary());
                 peopleInMap.add(element);
 
             } else {
@@ -30,7 +30,7 @@ public class MapPersonSalary {
         return doublePersonHashMap;
     }
 
-    public static Map<Double, List<Person>> salaryMapwithStream(Person[] array) {
+    public static Map<Double, List<Customer>> salaryMapwithStream(Customer[] array) {
 
        return Arrays.stream(array).collect(Collectors.groupingBy(e->e.getSalary()));
     }

@@ -2,7 +2,7 @@ package pl.sda.javastartTwo.exceptions;
 
 import com.google.common.collect.ObjectArrays;
 
-public class SimplePositiveNumbersBox<T extends Number> {
+public class SimplePositiveNumbersBox <T extends Number> {
 
     private T[] numbers; //niezmienna wielkość
 
@@ -14,6 +14,7 @@ public class SimplePositiveNumbersBox<T extends Number> {
     public SimplePositiveNumbersBox(Class<T> tClass, int size) {
         this.numbers = ObjectArrays.newArray(tClass, size);
     }
+
 
     public void setValue(int index, T value) throws OutOfBoxExceptions {
 
@@ -27,6 +28,7 @@ public class SimplePositiveNumbersBox<T extends Number> {
         }
         numbers[index] = value;
     }
+
 
     public T getValue(int index) throws OutOfBoxExceptions {
 

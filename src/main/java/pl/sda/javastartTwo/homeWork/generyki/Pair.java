@@ -1,4 +1,4 @@
-package pl.sda.javastartTwo.HomeWork.generyki;
+package pl.sda.javastartTwo.homeWork.generyki;
 
 public class Pair <T, S> {
 

@@ -1,6 +1,5 @@
-package pl.sda.javastartTwo.HomeWork.kolekcje;
+package pl.sda.javastartTwo.homeWork.kolekcje;
 
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;

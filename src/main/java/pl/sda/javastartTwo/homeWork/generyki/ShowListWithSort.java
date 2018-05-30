@@ -1,6 +1,5 @@
-package pl.sda.javastartTwo.HomeWork.generyki;
+package pl.sda.javastartTwo.homeWork.generyki;
 
-import java.util.Collections;
 import java.util.List;
 
 public class ShowListWithSort {

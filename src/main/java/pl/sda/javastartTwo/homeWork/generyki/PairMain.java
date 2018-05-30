@@ -1,4 +1,4 @@
-package pl.sda.javastartTwo.HomeWork.generyki;
+package pl.sda.javastartTwo.homeWork.generyki;
 
 import pl.sda.javastartTwo.generic1.Apple;
 import pl.sda.javastartTwo.generic1.Orange;

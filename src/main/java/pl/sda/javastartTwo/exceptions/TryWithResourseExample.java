@@ -21,7 +21,7 @@ public class TryWithResourseExample {
 
     public static void main(String[] args) {
 
-        tryWithResourseOldWay();
+      //  tryWithResourseOldWay();
         tryWithResourseNewWay();
     }
 

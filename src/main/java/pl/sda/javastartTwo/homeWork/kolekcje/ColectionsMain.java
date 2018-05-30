@@ -1,4 +1,4 @@
-package pl.sda.javastartTwo.HomeWork.kolekcje;
+package pl.sda.javastartTwo.homeWork.kolekcje;
 
 import java.util.Arrays;
 import java.util.Scanner;

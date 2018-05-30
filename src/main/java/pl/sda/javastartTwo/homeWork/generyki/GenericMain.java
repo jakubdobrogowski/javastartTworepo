@@ -1,4 +1,4 @@
-package pl.sda.javastartTwo.HomeWork.generyki;
+package pl.sda.javastartTwo.homeWork.generyki;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

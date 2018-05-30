@@ -1,11 +1,10 @@
-package pl.sda.javastartTwo.HomeWork.kolekcje;
+package pl.sda.javastartTwo.homeWork.kolekcje;
 
 //Napisz metodÍ przetwarzajĻcĻ podanĻ tablicÍ animals na listÍ elementůw pozbawionych bia≥ych znakůw
 //(spacje, tabulatory) //1
 
 import org.apache.commons.lang3.StringUtils;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

@@ -9,6 +9,14 @@ public class ExeptionExample {
       //  double resoult2 = divideWithStableResoult(2, 4);
       //  devideManyTimes(3, 4, 5, 6, 6);
 
+        positiveNumbers();
+
+
+
+    }
+
+    private static void positiveNumbers() {
+
         Integer[] ints = {1, 2, 3};
         SimplePositiveNumbersBox<Integer> numbersBox = new SimplePositiveNumbersBox<>(ints);
 
@@ -30,13 +38,14 @@ public class ExeptionExample {
         }
 
         System.out.println("Szczęśliwy koniec");
-
     }
+
 
     private static double divide(int x, int y) {
 
         return x / y;
     }
+
 
     private static int divideWithStableResoult(int x, int y) {
 
@@ -50,6 +59,7 @@ public class ExeptionExample {
             return -1; // nie umieszczaj return w finally
         }
     }
+
 
     //varargs
     private static double devideManyTimes(int x, int... dividers) {

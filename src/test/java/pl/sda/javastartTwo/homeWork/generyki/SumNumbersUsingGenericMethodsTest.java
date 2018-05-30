@@ -1,11 +1,9 @@
-package pl.sda.javastartTwo.HomeWork.generyki;
+package pl.sda.javastartTwo.homeWork.generyki;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class SumNumbersUsingGenericMethodsTest {
 

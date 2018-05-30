@@ -1,4 +1,4 @@
-package pl.sda.javastartTwo.HomeWork;
+package pl.sda.javastartTwo.homeWork;
 
 import java.util.ArrayList;
 
